@@ -4,6 +4,8 @@ import com.sampson.learndockerfile.service.HelloWorldService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class HelloWorldController {
 
@@ -16,5 +18,10 @@ public class HelloWorldController {
     @GetMapping("/")
     public String getHelloWorld(){
         return helloWorldService.getHelloWorld();
+    }
+
+    @GetMapping("/numbers")
+    public List<Integer> getValues(){
+        return helloWorldService.getNumbers();
     }
 }
