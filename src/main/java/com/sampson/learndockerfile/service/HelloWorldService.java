@@ -14,4 +14,8 @@ public class HelloWorldService {
     public List<Integer> getNumbers(){
         return List.of(13,26,39,52);
     }
+
+    public List<String> getNames(){
+        return List.of("A","B","C");
+    }
 }

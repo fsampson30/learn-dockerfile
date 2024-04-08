@@ -24,4 +24,10 @@ public class HelloWorldController {
     public List<Integer> getValues(){
         return helloWorldService.getNumbers();
     }
+
+    @GetMapping("/names")
+    public List<String> getNames(){
+        return helloWorldService.getNames();
+    }
+
 }
