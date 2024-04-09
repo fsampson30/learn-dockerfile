@@ -30,4 +30,9 @@ public class HelloWorldController {
         return helloWorldService.getNames();
     }
 
+    @GetMapping("/states")
+    public List<Boolean> getStates(){
+        return helloWorldService.getStates();
+    }
+
 }

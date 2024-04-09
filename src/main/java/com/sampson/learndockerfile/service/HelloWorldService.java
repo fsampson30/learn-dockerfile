@@ -18,4 +18,8 @@ public class HelloWorldService {
     public List<String> getNames(){
         return List.of("A","B","C");
     }
+
+    public List<Boolean> getStates(){
+        return List.of(false,true,false);
+    }
 }
