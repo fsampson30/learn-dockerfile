@@ -35,4 +35,9 @@ public class HelloWorldController {
         return helloWorldService.getStates();
     }
 
+    @GetMapping("/random")
+    public Integer getRandom(){
+        return helloWorldService.getRandomNumber();
+    }
+
 }
